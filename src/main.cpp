@@ -1,5 +1,6 @@
 #include <iostream>
 #include <memory>
+#include <fstream>
 #include "controller.h"
 #include "game.h"
 #include "renderer.h"
@@ -19,5 +20,10 @@ int main() {
   std::cout << "Game has terminated successfully!\n";
   std::cout << "Score: " << game->GetScore() << "\n";
   std::cout << "Size: " << game->GetSize() << "\n";
+  // Append the game record to a file.
+  std::ofstream ofs{"game_history.txt", std::ios::app};
+  ofs << "Score: " << game->GetScore() << "\n";
+  ofs << "Size: " << game->GetSize() << "\n";
+  ofs << "\n";
   return 0;
 }
