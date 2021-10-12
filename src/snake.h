@@ -13,8 +13,11 @@ class Snake {
         grid_height(grid_height),
         head_x(grid_width / 2),
         head_y(grid_height / 2) {}
+  Snake &operator=(const Snake &source);
+  Snake(const Snake &source);
+  Snake(const Snake &&source);
+  Snake &operator=(const Snake &&source);
   ~Snake();
-
   void Update();
 
   void GrowBody();

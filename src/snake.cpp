@@ -2,7 +2,67 @@
 #include <cmath>
 #include <iostream>
 
-Snake::Snake(){};
+Snake::Snake(){}
+
+Snake &Snake::operator=(const Snake &source){
+  if(this == &source){
+    return *this;
+  }
+  direction = source.direction;
+  speed = source.speed;
+  size = source.size;
+  alive = source.alive;
+  head_x = source.head_x;
+  head_y = source.head_y;
+  body = source.body;
+  growing = source.growing;
+  grid_width = source.grid_width;
+  grid_height = source.grid_height;
+  return *this;
+}
+
+Snake::Snake(const Snake &source){
+  direction = source.direction;
+  speed = source.speed;
+  size = source.size;
+  alive = source.alive;
+  head_x = source.head_x;
+  head_y = source.head_y;
+  body = source.body;
+  growing = source.growing;
+  grid_width = source.grid_width;
+  grid_height = source.grid_height;
+}
+
+Snake::Snake(const Snake &&source){
+  direction = source.direction;
+  speed = source.speed;
+  size = source.size;
+  alive = source.alive;
+  head_x = source.head_x;
+  head_y = source.head_y;
+  body = source.body;
+  growing = source.growing;
+  grid_width = source.grid_width;
+  grid_height = source.grid_height;
+}
+
+Snake &Snake::operator=(const Snake &&source){
+  if(this == &source){
+    return *this;
+  }
+  direction = source.direction;
+  speed = source.speed;
+  size = source.size;
+  alive = source.alive;
+  head_x = source.head_x;
+  head_y = source.head_y;
+  body = source.body;
+  growing = source.growing;
+  grid_width = source.grid_width;
+  grid_height = source.grid_height;
+  return *this;
+}
 
 Snake::~Snake(){};
 
