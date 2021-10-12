@@ -5,6 +5,12 @@
 
 class Controller {
  public:
+  Controller();
+  Controller(const Controller &source);
+  Controller(Controller &&source);
+  Controller &operator=(const Controller &source);
+  ~Controller();
+  Controller &operator=(Controller &&source);
   void HandleInput(bool &running, Snake &snake) const;
 
  private:
