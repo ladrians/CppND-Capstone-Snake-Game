@@ -11,7 +11,7 @@ class Controller {
   Controller &operator=(const Controller &source);
   ~Controller();
   Controller &operator=(Controller &&source);
-  void HandleInput(bool &running, Snake &snake) const;
+  void HandleInput(bool &running, Snake &snake, bool &on_pause, bool &on_new_game, bool &on_exit_game) const;
 
  private:
   void ChangeDirection(Snake &snake, Snake::Direction input,

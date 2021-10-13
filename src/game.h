@@ -29,6 +29,7 @@ class Game {
 
   void PlaceFood();
   void Update();
+  void NewGame();
 };
 
 #endif
