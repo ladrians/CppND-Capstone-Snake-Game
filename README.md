@@ -46,6 +46,10 @@ When running the game, the expected behavior is to show the snake and food item 
 * Created new options to the game to `start/pause/exit`.
 * Accumulate the scores to the `build/game_history.txt` file.
 
+## Bonus
+
+Created another project [Slanted Lidar](https://github.com/ladrians/CppND-Capstone) based on [ROS2 foxy](https://docs.ros.org/en/foxy/Installation.html) (which uses the C++ 14 standard) to exercise concepts of this course.
+
 ## CC Attribution-ShareAlike 4.0 International
 
 
