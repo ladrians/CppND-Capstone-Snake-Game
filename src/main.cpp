@@ -4,6 +4,12 @@
 #include "controller.h"
 #include "game.h"
 #include "renderer.h"
+#include "common.h"
+
+std::random_device dev;
+std::mt19937 engine(dev());
+std::uniform_int_distribution<int> random_w(0,static_cast<int>(32 - 1));
+std::uniform_int_distribution<int> random_h(0,static_cast<int>(32 - 1));
 
 int main() {
   constexpr std::size_t kFramesPerSecond{60};
