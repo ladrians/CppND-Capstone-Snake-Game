@@ -39,12 +39,13 @@ When running the game, the expected behavior is to show the snake and food item 
 
 [Rubric](https://review.udacity.com/#!/rubrics/2533/view) brief review.
 
-* Add support for smart pointers.
+* Add support for smart pointers (Memory Management).
 * General code refactoring
- * New `Food` class was created, accessing state via member functions.
- * new `common` definitions to centralize random numbers generation.
-* Created new options to the game to `start/pause/exit`.
-* Accumulate the scores to the `build/game_history.txt` file.
+ * New `Food` class was created, accessing state via member functions (Object Oriented Programming - Classes use appropriate access specifiers for class members / Classes encapsulate behavior / ).
+ * new `common` definitions to centralize random numbers generation (Object Oriented Programming - The project uses Object Oriented Programming techniques).
+* Created new options to the game to `start/pause/exit` (Loops, Functions, I/O - C++ functions and control structures).
+* Accumulate the scores to the `build/game_history.txt` file (Loops, Functions, I/O - The project reads data from a file and process the data, or the program writes data to a file).
+ * Food class uses the current snake object (Memory Management - The project makes use of references in function declarations).
 
 ## Bonus
 
